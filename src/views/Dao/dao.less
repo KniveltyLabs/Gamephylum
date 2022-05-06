@@ -1,0 +1,331 @@
+.dao {
+  padding-bottom: 0.8rem;
+  .banner {
+    position: relative;
+    background: url("../../assets/img/dao/banngbg.png") no-repeat;
+    background-size: 100% 100%;
+    &::after {
+      content: "";
+      display: block;
+      padding: 13%;
+    }
+    .banner_con {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .contribute {
+        font-size: 0.6rem;
+        font-family: "CeraGR";
+        line-height: 0.7rem;
+      }
+      .text {
+        font-size: 0.5rem;
+        font-family: "CeraGR";
+        background: linear-gradient(117deg, #07bfcb 0%, #046066 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        line-height: 0.6rem;
+      }
+      .list {
+        margin-top: 0.3rem;
+        .list_line {
+          display: flex;
+          align-items: center;
+          > img {
+            width: 0.2rem;
+          }
+          > span {
+            font-size: 0.28rem;
+            color: #cccccc;
+            margin-left: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+  .dao_curr {
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    .left_box,
+    .right_box {
+      width: 5.76rem;
+      height: 4rem;
+      background: #0e2133;
+      border-radius: 2px;
+      padding: 0.3rem 0.2rem;
+      .box_img {
+        display: block;
+        margin: 0 auto;
+        width: 2.6rem;
+        height: 1.6rem;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.15rem;
+        button {
+          width: 1.62rem;
+          height: 0.3rem;
+          border: 1px solid #26a5d8;
+          border-radius: 0.06rem;
+          background: #0e2133;
+          font-size: 0.14rem;
+        }
+      }
+      .illustrate {
+        margin-top: 0.25rem;
+        .title {
+          font-size: 0.18rem;
+          .question {
+            color: #26a5d8;
+          }
+        }
+        .text {
+          font-size: 0.16rem;
+          color: #b3b3b3;
+        }
+      }
+    }
+    .left_box {
+      .btn {
+        .become {
+          margin-right: 0.4rem;
+        }
+      }
+    }
+    .right_box {
+      .btn {
+        button {
+          width: 1.8rem;
+        }
+      }
+    }
+  }
+  .staking {
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    .title {
+      display: flex;
+      align-items: center;
+      > img {
+        width: 0.28rem;
+      }
+      > span {
+        font-size: 0.32rem;
+        margin-left: 0.05rem;
+      }
+    }
+    .staking_text {
+      width: 100%;
+      height: 0.64rem;
+      line-height: 0.64rem;
+      padding: 0 0.38rem;
+      background: #0c1f31;
+      font-size: 0.18rem;
+      border-radius: 2px;
+      margin-top: 0.25rem;
+    }
+    .staking_num {
+      margin-top: 0.4rem;
+      display: flex;
+      justify-content: space-between;
+      .box {
+        width: 5.76rem;
+        height: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0c1f31;
+        border-radius: 2px;
+        .staking_stat {
+          .ant-statistic-title {
+            text-align: center;
+            font-size: 0.18rem;
+            color: #b3b3b3;
+          }
+          .ant-statistic-content {
+            text-align: center;
+            font-size: 0.24rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .tu {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.4rem;
+      height: 4rem;
+      .left {
+        width: 5.76rem;
+        height: 100%;
+        background: #0e2133;
+        border-radius: 2px;
+        padding: 0.5rem 0.32rem;
+        .tu_top {
+          display: flex;
+          justify-content: space-between;
+          .choose {
+            width: 3rem;
+            .one_line {
+              margin-top: 0.2rem;
+              height: 0.3rem;
+              display: flex;
+              .title {
+                width: 1.5rem;
+                height: 100%;
+                font-size: 0.18rem;
+                line-height: 0.3rem;
+              }
+              .select {
+                width: 1.22rem;
+                height: 100%;
+                .period_select {
+                  width: 100%;
+                  height: 100%;
+                  font-size: 0.16rem;
+
+                  .period_option {
+                    height: 0.3rem;
+                    font-size: 0.16rem;
+                  }
+                }
+              }
+            }
+            .two_line {
+              margin-top: 0.3rem;
+              height: 0.3rem;
+              display: flex;
+              .title {
+                width: 1.5rem;
+                height: 100%;
+                font-size: 0.18rem;
+                line-height: 0.3rem;
+              }
+              .input {
+                flex: 1;
+                height: 100%;
+                .gpt_input {
+                  width: 1.22rem;
+                  height: 100%;
+                  border-radius: 0.08rem;
+                  .ant-input {
+                    font-size: 0.16rem;
+                  }
+                  .max {
+                    cursor: pointer;
+                    font-size: 0.16rem;
+                  }
+                }
+              }
+            }
+            .therr_line {
+              display: flex;
+              align-items: center;
+              margin-top: 0.34rem;
+              > img {
+                width: 0.16rem;
+              }
+              .btn {
+                padding: 0 0.12rem;
+                height: 0.3rem;
+                font-size: 0.16rem;
+                border-radius: 0.08rem;
+                background: #06192b;
+                margin-left: 0.12rem;
+                cursor: pointer;
+              }
+            }
+          }
+          .apr_chart {
+            width: 1.3rem;
+            .jingdu {
+              width: 1.3rem;
+              height: 1.3rem;
+              .jingdu_quan {
+                width: 1.3rem;
+                height: 1.3rem;
+                .ant-progress-inner {
+                  width: 1.3rem !important;
+                  height: 1.3rem !important;
+                  .ant-progress-text {
+                    font-size: 0.18rem;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .apr {
+              text-align: center;
+              font-size: 0.18rem;
+              margin-top: 0.2rem;
+            }
+          }
+        }
+        .tu_bom {
+          margin-top: 0.4rem;
+          .title_bom {
+            font-size: 0.18rem;
+            .question {
+              color: #26a5d8;
+            }
+          }
+          .text {
+            font-size: 0.16rem;
+            color: #b3b3b3;
+          }
+        }
+      }
+      .right {
+        width: 5.76rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .claim,
+        .my_staking {
+          width: 100%;
+          height: 1.9rem;
+          background: #0e2133;
+          border-radius: 2px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .claim_title {
+            font-size: 0.18rem;
+          }
+          .claim_img {
+            width: 0.4rem;
+            margin: 0.1rem 0;
+          }
+          .claim_num {
+            font-size: 0.24rem;
+          }
+          .claim_btn {
+            width: 0.8rem;
+            height: 0.3rem;
+            border-radius: 0.15rem;
+            background: #03beca;
+            font-size: 0.16rem;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-select-item {
+  font-size: 0.16rem;
+}

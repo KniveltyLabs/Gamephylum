@@ -1,0 +1,283 @@
+@import "~antd/dist/antd.css";
+
+html {
+  font-size: 625%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 463.8%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 300%;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 625%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 400%;
+  }
+}
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 345%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 312.5%;
+  }
+}
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+
+.clear {
+  clear: both;
+  font-size: 0px;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+}
+/*一般链接*/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */
+
+/*png css hack for ie6*/
+
+div {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@font-face {
+  font-family: "SourceHanSerifCNBold";
+  src: url("./assets/fonts/SourceHanSerifCN-Bold.otf");
+}
+@font-face {
+  font-family: "CeraGR";
+  src: url("./assets/fonts/cera-gr-bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-size: 0.14rem;
+  box-sizing: border-box;
+}
+
+.ant-table-wrapper {
+  .ant-table-container {
+    border-left: none !important;
+  }
+  .ant-table-content {
+    table {
+      border: 1px solid #3c4c5a !important;
+      border-radius: 0 !important;
+    }
+  }
+  .ant-table-thead {
+    tr {
+      .ant-table-cell {
+        background: #0e2133;
+        color: #fff;
+        border-right: 1px solid #3c4c5a !important;
+        border-bottom: 1px solid #3c4c5a;
+        padding: 0 0.1rem;
+        &:last-child {
+          border-right: none !important;
+        }
+      }
+    }
+  }
+
+  // 表格公共样式修改
+  .ant-table-tbody {
+    tr {
+      height: 0.5rem;
+      .ant-table-cell {
+        background: #06192b;
+        color: #fff;
+        border-right: 1px solid #3c4c5a !important;
+        border-bottom: 1px solid #3c4c5a;
+        padding: 0 0.1rem;
+        &:last-child {
+          border-right: none !important;
+        }
+      }
+      &:nth-child(2n) {
+        .ant-table-cell {
+          background: #0e2133;
+        }
+      }
+      &:last-child {
+        .ant-table-cell {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .ant-table-tbody {
+    > tr:hover:not(.ant-table-expanded-row) > td,
+    .ant-table-row-hover,
+    .ant-table-row-hover > td {
+      background-color: #06192b !important;
+    }
+    tr {
+      &:nth-child(2n):hover {
+        .ant-table-cell-row-hover {
+          background: #0e2133 !important;
+        }
+      }
+    }
+  }
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 0px !important;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 0px !important;
+  }
+}
+
+// 下拉选择框公共样式修改
+
+.ant-select {
+  .ant-select-selector {
+    background: #06192b !important;
+    border-radius: 0.08rem !important;
+    color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .ant-select-arrow {
+    .anticon-down {
+      color: #fff !important;
+    }
+  }
+}
+.ant-select-dropdown {
+  background: #06192b !important;
+  color: #fff !important;
+  .ant-select-item {
+    color: #fff !important;
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: #0e2133 !important;
+  }
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    color: #0e2133 !important;
+    background-color: #e6f7ff !important;
+  }
+}
+
+// 带后缀的input框样式修改
+.ant-input-affix-wrapper {
+  outline: none !important;
+  background-color: #06192b !important;
+  color: #fff !important;
+  border: none !important;
+  .ant-input {
+    background-color: transparent;
+    color: #fff !important;
+  }
+}
+
+// 菜单颜色
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background-color: #06192b !important;
+}
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background: #06192b !important;
+}
+.ant-menu {
+  .ant-menu-submenu {
+    .ant-menu-submenu-title {
+      padding: 0 !important;
+      font-size: 0.2rem;
+    }
+  }
+  .ant-menu-item {
+    padding-left: 0.2rem !important;
+    font-size: 0.14rem;
+  }
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #06192b !important;
+  color: #03beca;
+}
