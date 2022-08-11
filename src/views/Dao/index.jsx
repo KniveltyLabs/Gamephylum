@@ -6,16 +6,17 @@ import boxbg from "../../assets/img/dao/boxbg.png";
 import listline from "../../assets/img/dao/listline.png";
 import huomiao from "../../assets/img/dao/huomiao.png";
 import claimimg from "../../assets/img/dao/claimimg.png";
+import comsoon from "../../assets/img/comsoon1.png";
 
 import "./dao.less";
 const { Option } = Select;
 const Dao = (props) => {
   const { t } = useTranslation();
-  // GPT TVL数量
+  // GPT TVL
   const [gpttvlNum, setGpttvlNum] = useState(18518181581);
-  // Average Staking Period数量
+  // Average Staking Period
   const [averageNum, setAverageNum] = useState(3);
-  // Staking Period选择列表
+  // Staking Period select list
   const [periodList, setPeriodList] = useState([
     {
       id: 0,
@@ -42,13 +43,13 @@ const Dao = (props) => {
       title: t("3 Year"),
     },
   ]);
-  // Period选中项
+  // Period active
   const [periodActive, setPeriodActive] = useState(periodList[0].id);
-  // GPT输入框的内容
+  // GPT
   const [optVal, setOptVal] = useState("");
-  // Claim My Reward 数量
+  // Claim My Reward 
   const [claimNum, setClaimNum] = useState(100);
-  // My Staking数量
+  // My Staking
   const [myStakingNum, setMyStakingNum] = useState(200);
   useEffect(() => {}, []);
   const periodChange = (key) => {
@@ -58,8 +59,12 @@ const Dao = (props) => {
     setOptVal(value);
   };
   return (
-    <div className="dao">
-      <div className="banner">
+    <div className="dao" style={{height:"calc(100vh - 0.8rem)"}}>
+      <div style={{height:"100%",display:"flex",alignItems: "center",
+      justifyContent: "center"}}>
+        <img width="50%" src={comsoon} alt="" />
+      </div>
+      {/* <div className="banner">
         <div className="banner_con">
           <p className="contribute">{t("Contribute to the GamePhylumDAO")}</p>
           <p className="text">{t("Get the DAOMember NFT")}</p>
@@ -207,7 +212,7 @@ const Dao = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

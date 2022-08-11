@@ -80,7 +80,6 @@ li {
 img {
   border: none;
 }
-/*一般链接*/
 a {
   text-decoration: none;
   color: #fff;
@@ -88,7 +87,6 @@ a {
 a:hover {
   color: #fff;
 }
-/*清除浮动*/
 .clearfix:after {
   content: ".";
   display: block;
@@ -124,21 +122,44 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 @font-face {
   font-family: "SourceHanSerifCNBold";
-  src: url("./assets/fonts/SourceHanSerifCN-Bold.otf");
+  src: url("./assets/fonts/MaisonNeue-Bold.otf");
 }
 @font-face {
   font-family: "CeraGR";
-  src: url("./assets/fonts/cera-gr-bold.otf");
+  src: url("./assets/fonts/MaisonNeue-Medium.otf");
 }
-
+@font-face {
+  font-family: "SatoshiMedium";
+  src: url("./assets/fonts/Satoshi-Medium.ttf");
+}
+@font-face {
+  font-family: "SatoshiRegular";
+  src: url("./assets/fonts/Satoshi-Regular.otf");
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: PingFang SC, PingFang SC-Medium;
+  font-family: SourceHanSerifCNBold,CeraGR !important;
   font-size: 0.14rem;
   box-sizing: border-box;
 }
-
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+.flex_column{
+  flex-direction: column;
+}
+.flex_between{
+  justify-content: space-between;
+}
+.flex_center{
+  justify-content: center;
+}
+.flex_align_center{
+  align-items: center;
+}
 .ant-table-wrapper {
   .ant-table-container {
     border-left: none !important;
@@ -164,7 +185,6 @@ body {
     }
   }
 
-  // 表格公共样式修改
   .ant-table-tbody {
     tr {
       height: 0.5rem;
@@ -212,7 +232,6 @@ body {
   }
 }
 
-// 下拉选择框公共样式修改
 
 .ant-select {
   .ant-select-selector {
@@ -244,7 +263,6 @@ body {
   }
 }
 
-// 带后缀的input框样式修改
 .ant-input-affix-wrapper {
   outline: none !important;
   background-color: #06192b !important;
@@ -256,7 +274,6 @@ body {
   }
 }
 
-// 菜单颜色
 .ant-menu-dark .ant-menu-inline.ant-menu-sub {
   background-color: #06192b !important;
 }

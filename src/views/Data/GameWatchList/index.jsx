@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Pagination, Table } from "antd";
-
+import comsoon from "../../../assets/img/comsoon1.png";
 import "./gamewatchlist.less";
 const GameWatchList = (props) => {
   const { t } = useTranslation();
 
-  // 列表的列名
   const columns = [
     {
       title: "",
@@ -66,7 +65,6 @@ const GameWatchList = (props) => {
     },
   ];
 
-  // 列表的数据
   const data = [
     {
       id: 1,
@@ -83,8 +81,12 @@ const GameWatchList = (props) => {
   ];
   useEffect(() => {}, []);
   return (
-    <div className="gamewatchlist">
-      <div className="table">
+    <div className="gamewatchlist" style={{height:"calc(100vh - 0.8rem)"}}>
+      <div style={{height:"100%",display:"flex",alignItems: "center",
+      justifyContent: "center"}}>
+        <img width="50%" src={comsoon} alt="" />
+      </div>
+      {/* <div className="table">
         <Table
           columns={columns}
           dataSource={data}
@@ -92,8 +94,9 @@ const GameWatchList = (props) => {
           pagination={false}
           className="gamewatchlist_table"
           rowKey="id"
+          scroll={{ x: "100%" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

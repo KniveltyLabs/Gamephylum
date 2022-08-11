@@ -18,13 +18,13 @@ module.exports = {
 
   babel: {
     plugins: [
-      ["@babel/plugin-proposal-decorators", { legacy: true }], //装饰器
+      ["@babel/plugin-proposal-decorators", { legacy: true }],
       [
         "import",
         {
           libraryName: "antd",
           libraryDirectory: "es",
-          style: true, //设置为true即是less
+          style: true,
         },
       ],
     ],

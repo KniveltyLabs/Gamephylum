@@ -1,15 +1,16 @@
 .box_gpl {
   width: 3.55rem;
-  height: 3.8rem;
+  // height: 3.8rem;
   margin-right: 0.67rem;
   margin-top: 0.3rem;
+  cursor: pointer;
   &:nth-child(3n) {
     margin-right: 0;
   }
   &:nth-child(-n + 3) {
     margin-top: 0;
   }
-  > img {
+  .img {
     width: 100%;
     height: 2.5rem;
     border-radius: 0.06rem;
@@ -17,19 +18,29 @@
   > h3 {
     font-size: 0.24rem;
     font-weight: 400;
-    overflow: hidden;
-    text-overflow: ellipsis; //文本溢出显示省略号
-    white-space: nowrap; //文本不会换行
-    -o-text-overflow: ellipsis;
-    line-height: 0.5rem;
+    line-height: 0.4rem;
     color: #fff;
   }
+  .time{
+    color: #72898d;
+    font-family:SatoshiRegular,SatoshiMedium !important;
+  }
   .content_p {
+    font-family:SatoshiRegular,SatoshiMedium !important;
     font-size: 0.18rem;
     color: #cccccc;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .box_gpl {
+    width: 48%;
+    margin-right: 0;
+    height: auto;
+    margin-bottom: .1rem;
+    margin-top: 0 !important;
   }
 }

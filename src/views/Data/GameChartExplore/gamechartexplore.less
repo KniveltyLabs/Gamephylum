@@ -12,9 +12,40 @@
       background: #596a76;
       border-radius: 0.03rem;
     }
+    .ant-menu-dark {
+      .ant-menu-inline.ant-menu-sub{
+        font-family:SatoshiRegular,SatoshiMedium !important;
+      }
+    }
   }
   .children {
     width: 8.5rem;
     padding-left: 0.1rem;
+    
+  }
+}
+@media screen and (max-width: 500px) {
+  .gamechartexplore  {
+    width: 100%;
+    flex-direction: column;
+    .menu{
+      width: 100%;
+    }
+    .children{
+      margin-top: .2rem;
+      width: 100%;
+      padding-left: 0;
+      .dashboard_box {
+        .flex_between{
+          flex-direction: column;
+          .echarts_box{
+            width: 100%;
+            .echarts-for-react {
+              height: 5rem !important;
+            }
+          }
+        }
+      }
+    }
   }
 }

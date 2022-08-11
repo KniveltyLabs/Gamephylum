@@ -1,5 +1,4 @@
 const menus = {
-  // 菜单相关路由
   menus: [
     {
       key: "/home",
@@ -13,11 +12,19 @@ const menus = {
       key: "/dao",
       component: "Dao",
     },
+    {
+      key: "/details/:type/:ids",
+      component: "Details",
+    },
   ],
   lists: [
     {
       key: "/data/gameassetscreener",
       component: "GameAssetScreener",
+    },
+    {
+      key: "/data/assetscreenerdetails/:id",
+      component: "AssetsCreenerDetails",
     },
     {
       key: "/data/gamewatchlist",

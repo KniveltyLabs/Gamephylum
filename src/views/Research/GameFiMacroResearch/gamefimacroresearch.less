@@ -1,0 +1,36 @@
+.macro_box{
+    margin-top: 0.5rem;
+    height: calc(100vh - 1.3rem);
+    overflow-y: auto;
+    .research {
+        width: 12rem;
+        margin: 0 auto;
+        
+        > h3 {
+          font-size: 0.32rem;
+          font-weight: 500;
+          margin-bottom: 0.2rem;
+          color: #fff;
+        }
+        .research_con {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+}
+
+  .macro_box::-webkit-scrollbar { 
+    width: 0;   
+  }
+
+@media screen and (max-width: 500px) {
+  .macro_box  {
+    height: calc(100vh - 1.5rem);;
+    .research{
+      width: 100%;
+      .research_con{
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+.dashboard_box{
+    .table_box{
+        .table_title{
+            margin-bottom: .2rem;
+            .select_box{
+              border: 1px solid #aaa;
+            }
+            .item_tab{
+              >span{
+                font-weight: normal;
+                margin-left: .2rem;
+                cursor: pointer;
+                &.active{
+                  color: #03beca;
+                }
+              }
+            }
+        }
+        .address_name{
+            overflow:hidden;
+
+            white-space: nowrap;
+
+            text-overflow: ellipsis;
+
+            -o-text-overflow:ellipsis;
+        }
+        .ant-table-wrapper {
+            .ant-table-thead {
+              tr {
+                .ant-table-cell {
+                  padding: 0.15rem 0.1rem;
+      
+                  &:hover {
+                    background-color: #06192b !important;
+                  }
+                }
+              }
+            }
+          }
+      
+        .ant-pagination-item {
+            a {
+              color: #fff;
+            }
+          }
+      
+          .ant-pagination-item-active {
+            background-color: transparent;
+            border-color: #03beca;
+      
+            a {
+              color: #03beca;
+            }
+          }
+      
+          .ant-pagination-disabled {
+            .ant-pagination-item-link {
+              color: #fff;
+            }
+          }
+      
+          .ant-pagination-disabled:hover {
+            .ant-pagination-item-link {
+              color: #fff;
+            }
+          }
+      
+          .ant-pagination-disabled:focus-visible {
+            .ant-pagination-item-link {
+              color: #fff;
+            }
+          }
+      
+          .ant-pagination-prev,
+          .ant-pagination-next,
+          .ant-pagination-jump-prev,
+          .ant-pagination-jump-next {
+            color: #fff;
+      
+            button {
+              color: #fff;
+            }
+          }
+      
+          .ant-pagination-jump-prev,
+          .ant-pagination-jump-next {
+            .ant-pagination-item-container {
+              .ant-pagination-item-ellipsis {
+                color: #fff;
+              }
+            }
+          }
+    }
+    .dashboard_title{
+        width: 100%;
+        height: .52rem;
+        background: #0E2133;
+        border-radius: 2px;
+        line-height: .52rem;
+        padding-left: .25rem;
+        font-size: .22rem;
+    }
+    .tab{
+        width: 100%;
+        justify-content: center;
+        padding-top: .2rem;
+        z-index: 99999999;
+        >div{
+            cursor: pointer;
+            border-radius: .02rem;
+            margin-right: .5rem;
+            &.active{
+                color: #03beca;
+                border-color:#03beca ;
+            }
+        }
+    }
+    .item{
+        width: 100%;
+        margin-bottom: .5rem;
+        padding: 0 .1rem;
+        
+        
+        .echarts_box{
+            position: relative;
+            width: 48%;  
+            .tab{
+                position: absolute;
+                width: 100%;
+                justify-content: center;
+                padding-top: .2rem;
+                z-index: 99999999;
+                >div{
+                    cursor: pointer;
+                    border: 1px solid rgba(238, 238, 238, 0.562);
+                    color:rgba(238, 238, 238, 0.562) ;
+                    padding: .02rem .05rem;
+                    &:first-child{
+                        border-top-left-radius: .05rem;
+                        border-bottom-left-radius: .05rem;
+                    }
+                    &:last-child{
+                        border-top-right-radius: .05rem;
+                        border-bottom-right-radius: .05rem;
+                    }
+                    &.active{
+                        color: #03beca;
+                        border-color:#03beca ;
+                    }
+                }
+            }
+        }
+        .echarts_box_big{
+            width: 100%;
+            .tab_box{
+                display: flex;
+                justify-content: flex-end;
+                >div{
+                    margin-left: .2rem;
+                    &.active{
+                        color: #03beca;
+                    }
+                }
+            }            
+        }
+        .echarts_title{
+            margin-top: .45rem;
+            text-align: center;
+            margin-bottom: .1rem;
+        }
+    }
+    .box{
+        .echarts_box{
+            width: 50%;  
+        }
+    }
+}

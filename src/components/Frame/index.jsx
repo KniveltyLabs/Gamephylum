@@ -4,7 +4,13 @@ import Header from "../Header";
 
 import "./frame.less";
 const Frame = (props) => {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (document && props.history.location.pathname != '/home') {
+      if (document?.documentElement || document?.body) {
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
+      }
+    }
+  }, [props.history.location.pathname]);
   return (
     <div className="frame">
       <Header props={props} />

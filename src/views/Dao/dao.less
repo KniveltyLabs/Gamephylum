@@ -1,5 +1,8 @@
 .dao {
-  padding-bottom: 0.8rem;
+  width: 100%;
+  background: url("../../assets/img/comsoon.png") no-repeat;
+    background-position:center ;
+  // padding-bottom: 0.8rem;
   .banner {
     position: relative;
     background: url("../../assets/img/dao/banngbg.png") no-repeat;
@@ -328,4 +331,95 @@
 }
 .ant-select-item {
   font-size: 0.16rem;
+}
+@media screen and (max-width: 500px) {
+  .dao {
+    .banner {
+      .banner_con {
+        .contribute{
+          font-size: .2rem;
+          line-height: .2rem;
+        }
+        .text{
+          font-size: .18rem;
+          line-height: .2rem;
+          margin-top: .2rem;
+        }
+        .list {
+          margin-top: .2rem;
+          .list_line {
+            > span{
+              font-size: .16rem;
+            }
+          }
+        }
+      }
+    }
+    .dao_curr{
+      width: 100%;
+      flex-direction: column;
+       .left_box ,  .right_box {
+        .btn button{
+          width: 40%;
+          height: .5rem;
+        }
+       }
+      .left_box{
+        width: 100%;
+        height: auto;
+      }
+      .right_box{
+        width: 100%;
+        height: auto;
+        margin-top: .2rem;
+      }
+    }
+    .staking{
+      width: 100%;
+      flex-direction: column;
+      .staking_text{
+        height: auto;
+      }
+      .tu{
+        flex-direction: column;
+        height: auto;
+        .left{
+          width: 100%;
+          .tu_top {
+            .choose{
+              flex: 1;
+              .one_line {
+                height: .5rem;
+                .select{
+                  flex: 1;
+                }
+              }
+              .two_line {
+                height: .5rem;
+                margin-top: .2rem;
+                .input {
+                  .gpt_input{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .apr_chart{
+              margin-left: .3rem;
+            }
+          }
+        }
+        .right{
+          width: 100%;
+          margin-top: .2rem;
+           .claim {
+            .claim_btn{
+              width: 1.5rem;
+              height: .5rem;
+            }
+           }
+        }
+      }
+    }
+  }
 }

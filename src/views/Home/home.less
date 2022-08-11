@@ -50,6 +50,7 @@
     .research_con {
       display: flex;
       flex-wrap: wrap;
+      margin-top: .2rem;
     }
   }
 
@@ -66,6 +67,7 @@
     .raiders_con {
       display: flex;
       flex-wrap: wrap;
+      margin-top: .2rem;
     }
   }
 
@@ -96,7 +98,7 @@
         }
         .content {
           font-size: 0.18rem;
-          font-family: "SourceHanSerifCNBold";
+          font-family:SatoshiRegular,SatoshiMedium !important;
           margin-top: 0.1rem;
           color: #cccccc;
         }
@@ -116,7 +118,7 @@
         }
 
         &:hover {
-          background-color: #0e2133;
+          background-color: #132c42;
           .view {
             background-color: #03beca;
             color: #fff;
@@ -129,9 +131,55 @@
       height: 100%;
       display: flex;
       align-items: center;
+      
       > img {
         width: 100%;
         max-height: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border:3px solid #405c6e ;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .home {
+    .banner {
+      .banner_con {
+        > h1{
+          font-size: .3rem;
+        }
+      }
+    }
+    
+    .research,.raiders,.tab{
+      width: 100%;
+      padding: 0 .1rem;
+      .research_con,.raiders_con{
+        justify-content: space-between;
+      }
+    }
+    .tab{
+      height: auto;
+      .tab_left{
+        width: 100%;
+      }
+      .tab_right{
+        display: none;
+      }
+    }
+    .footer {
+      height: auto;
+      .footer_con{
+        width: 100%;
+        padding: 0.2rem .1rem;
+        flex-direction: column;
+        .footer_left{
+          width: 100%;
+        }
+        .footer_right{
+          width: 100%;
+        }
       }
     }
   }

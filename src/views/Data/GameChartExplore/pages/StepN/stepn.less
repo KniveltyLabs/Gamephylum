@@ -1,0 +1,91 @@
+.step_box {
+    .ant-table-wrapper {
+        .ant-table-content {
+            table{
+                border: none !important;
+                th,td{
+                    border: 1px solid #3c4c5a !important;
+                }
+                tbody{
+                    tr{
+                        &:first-child{
+                            td{
+                                border: none !important;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .ant-table-thead {
+            tr {
+                .ant-table-cell {
+                    padding: .15rem .1rem;
+                }
+            }
+        }
+    }
+
+    .top {
+        font-size: .22rem;
+        .left_flex {
+            .select_box {
+                margin-left: .1rem;
+                border-radius: .1rem;
+                background-color: #0E2133;
+
+                .ant-select {
+                    .ant-select-selector {
+
+                        background-color: #0E2133 !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .table_title {
+        margin-top: .3rem;
+        text-align: center;
+        font-size: .2rem;
+        margin-bottom: .2rem;
+
+        .sm_title {
+            font-size: .14rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    .table_sm_title {
+        margin-bottom: .2rem;
+        color: rgba(255, 255, 255, 0.65);
+
+        .mr_20 {
+            margin-right: .2rem;
+        }
+    }
+}
+.min_active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 190, 202, .2);
+    display: flex;
+    align-items: center;
+    padding-left: .1rem;
+}
+.ant-table-content::-webkit-scrollbar-track {
+    background-color: #596A76;
+}
+.ant-table-content::-webkit-scrollbar {
+    width: .1rem;
+    height: .05rem;
+}
+.ant-table-content::-webkit-scrollbar-thumb {
+    background-color: #03BECA;
+    border-radius: 3px;
+}

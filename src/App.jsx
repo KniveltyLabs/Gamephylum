@@ -11,6 +11,7 @@ import {
 import "./i18n";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Frame>

@@ -3,9 +3,10 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import routerConfig from "./config";
 import AllComponents from "../views/index";
 const CRouter = () => {
+  console.log(routerConfig)
   const createMenu = (r) => {
     const Component = r.component && AllComponents[r.component];
-
+    
     return (
       <Route
         key={r.key}

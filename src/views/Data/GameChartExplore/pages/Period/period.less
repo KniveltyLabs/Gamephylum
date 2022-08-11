@@ -1,0 +1,42 @@
+.period_box{
+    .search {
+        width: 100%;
+        height: 0.52rem;
+        background: #0e2133;
+        display: flex;
+        .search_img {
+          width: 0.5rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > img {
+            width: 0.22rem;
+          }
+        }
+        .search_input {
+          flex: 1;
+          font-size: 0.16rem;
+          color: #fff;
+        }
+      }
+      .echarts_box{
+          width: 3.38rem;
+          height: 3.14rem;
+          .echarts_title{
+              text-align: center;
+          }
+      }
+}
+@media screen and (max-width: 500px) {
+  .period_box  {
+    width: 100%;
+    .flex_between{
+      flex-direction: column;
+      .echarts_box{
+        width: 100%;
+        height: 5rem !important;
+      }
+    }
+  }
+}

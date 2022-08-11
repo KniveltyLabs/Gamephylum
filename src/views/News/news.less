@@ -42,8 +42,82 @@
         tr {
           height: 0.6rem;
           font-size: 0.16rem;
+          font-family:SatoshiRegular,SatoshiMedium !important;
+          cursor: pointer;
+          &:hover{
+            .ant-table-cell{
+              color: #1890ff;
+            }
+            
+          }
         }
       }
+    }
+  }
+  .ant-pagination-item{
+    a{
+        color: #fff;
+    }
+}
+.ant-pagination-item-active{
+    background-color: transparent;
+    border-color:#03beca;
+    a{
+        color: #03beca;
+    }
+}
+.ant-pagination-disabled {
+    .ant-pagination-item-link{
+        color: #fff;
+    }
+} .ant-pagination-disabled:hover {
+    .ant-pagination-item-link{
+        color: #fff;
+    }
+} .ant-pagination-disabled:focus-visible {
+    .ant-pagination-item-link{
+        color: #fff;
+    }
+}
+.ant-pagination-prev, 
+.ant-pagination-next, 
+.ant-pagination-jump-prev, 
+.ant-pagination-jump-next{
+    color: #fff;
+    button{
+        color: #fff;
+    }
+}
+.ant-pagination-jump-prev , .ant-pagination-jump-next
+{
+    .ant-pagination-item-container {
+        .ant-pagination-item-ellipsis{
+            color: #fff;
+        }
+    }
+}
+.ant-table-wrapper{
+    .ant-table-thead {
+        tr{
+            .ant-table-cell{
+                padding: 0.15rem 0.1rem;
+                &:hover{
+                    background-color: #06192b !important;
+                }
+            }
+        }
+    }
+}
+.ant-empty-normal{
+  color: #fff;
+}
+}
+@media screen and (max-width: 500px) {
+  .news{
+    width: 100%;
+    padding: 0 .1rem;
+    .search{
+      width: 100%;
     }
   }
 }

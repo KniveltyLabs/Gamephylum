@@ -86,6 +86,7 @@
           padding: 0.1rem 0.2rem;
           border-radius: 0.16rem;
           z-index: 999;
+          font-family:SatoshiRegular,SatoshiMedium !important;
           a {
             display: flex;
             flex-direction: column;
@@ -142,5 +143,53 @@
         }
       }
     }
+  }
+}
+.ant-menu .ant-menu-item {
+  padding-left: 0 !important;
+  font-size: 0.14rem;
+}
+.ant-menu .ant-menu-title-content {
+  padding-left: 0.2rem !important;
+  font-size: 0.14rem;
+}
+.mob_menu{
+  display: none !important;
+}
+@media screen and (max-width: 500px) {
+  .mob_menu{
+    display: flex !important;
+  }
+  .pc_menu{
+    display: none !important;
+  }
+  .header{
+    height: 1rem;
+    .header_con{
+      width: 100%;
+      padding: 0 .2rem;
+      height: 1rem;
+      .logo{
+        height: 1rem;
+        >img{
+          height: .7rem;
+        }
+      }
+      .menu{
+        height: 1rem;
+        font-size: .4rem;
+        .menu_item{
+          margin-left: .4rem;
+        }
+      }
+    }
+  }
+  .ant-menu {
+    .ant-menu-title-content{
+      font-size: .3rem;
+    }
+  }
+  .ant-drawer-body{
+    padding: 0;
   }
 }

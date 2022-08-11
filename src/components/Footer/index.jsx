@@ -21,15 +21,15 @@ const Footer = ({ props }) => {
         </div>
         <div className="footer_right">
           <h2>{t("Join The GamePhylum Community")}</h2>
-          <div className="icon">
+          <div className="icon" >
             <img src={telegram} alt="" />
             <span>Telegram</span>
           </div>
-          <div className="icon">
+          <div className="icon" onClick={()=>{window.open("https://twitter.com/GamePhylum")}}>
             <img src={twitter} alt="" />
             <span>Twitter</span>
           </div>
-          <div className="icon">
+          <div className="icon" onClick={()=>{window.open("https://discord.gg/d85gwWVjm4")}}>
             <img src={discord} alt="" />
             <span>Discord</span>
           </div>

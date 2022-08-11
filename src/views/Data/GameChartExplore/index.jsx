@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Paradise from "./pages/Paradise";
 import Overview from "./pages/Overview";
 import Period from "./pages/Period";
+import StepN from "./pages/StepN";
 
 import "./gamechartexplore.less";
 
@@ -29,7 +30,7 @@ const GameChartExplore = (props) => {
         },
         {
           id: 13,
-          title: t("Pegaxy"),
+          title: t("Dracoo Master"),
           key: "/data/gamechartexplore/dashboard/3",
         },
       ],
@@ -55,7 +56,7 @@ const GameChartExplore = (props) => {
         },
         {
           id: 24,
-          title: t("Pegaxy"),
+          title: t("Dracoo"),
           key: "/data/gamechartexplore/paradise/3",
         },
       ],
@@ -64,6 +65,11 @@ const GameChartExplore = (props) => {
       id: 3,
       title: t("Game Payback Period"),
       children: [
+        {
+          id: 34,
+          title: t("StepN"),
+          key: "/data/gamechartexplore/period/stepN",
+        },
         {
           id: 31,
           title: t("StarSharks"),
@@ -76,15 +82,16 @@ const GameChartExplore = (props) => {
         },
         {
           id: 33,
-          title: t("Pegaxy"),
+          title: t("Dracoo Master"),
           key: "/data/gamechartexplore/period/3",
         },
+        
       ],
     },
   ]);
-  // 选中项
+  // activeRouter
   const [activeRouter, setActiveRouter] = useState(["11"]);
-  // 展开列
+  // openKeys
   const [openKeys, setOpenKeys] = useState(["1"]);
   const setRouter = () => {
     console.log("propsprops", props);
@@ -110,6 +117,7 @@ const GameChartExplore = (props) => {
     setRouter();
   }, [props.location.pathname]);
   const getPage = (key) => {
+    console.log(key)
     props.history.push(key);
   };
 
@@ -164,9 +172,14 @@ const GameChartExplore = (props) => {
             component={Paradise}
           ></Route>
           <Route
+            path="/data/gamechartexplore/period/stepN"
+            component={StepN}
+          ></Route>
+          <Route
             path="/data/gamechartexplore/period/:ids"
             component={Period}
           ></Route>
+          
         </Switch>
       </div>
     </div>
