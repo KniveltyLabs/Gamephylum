@@ -55,6 +55,8 @@ const GameFiProjectReserch = (props) => {
     getArticleList({ category_id: id, page: page }).then((res) => {
       if (res.total > 0) {
         if(page === 1){
+          // console.log("res.data",res.data);
+          setResearchList([])
           setResearchList([ ...res.data]);
         }else{
           setResearchList([...researchList, ...res.data]);

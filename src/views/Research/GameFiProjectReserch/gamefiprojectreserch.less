@@ -71,10 +71,10 @@
 }
 .project_box{
   // margin-top: 0.5rem;
-  height: calc(100vh - 2.3rem);
+  // height: calc(100vh - 2.3rem);
   overflow-y: auto;
   .research {
-      width: 12rem;
+      // width: 10rem;
       margin: 0 auto;
       
       > h3 {
@@ -86,6 +86,20 @@
       .research_con {
         display: flex;
         flex-wrap: wrap;
+        .box_gpl {
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+          &:nth-child(3n) {
+            margin-right: .67rem;
+          }
+          &:nth-child(-n + 3) {
+            margin-top: .3rem;
+          }
+          &:nth-child(-n + 2) {
+            margin-top: 0;
+          }
+        }
         .flex_box{
           width: 12rem;
           padding: .5rem;
